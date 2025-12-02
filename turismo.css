@@ -1,0 +1,205 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: sans-serif, Arial, Helvetica;
+}
+/* Header */
+header {
+    width: 100%;
+    height: 100vh;
+    background-image: url(https://www.monytoursperu.com/gal/huaraz-maravilloso4.jpg);
+    background-size: cover;
+    background-position: center;
+    box-sizing: border-box;
+}
+.header_overlay{
+    height: 100vh;
+    width: 100%;
+    background-color: #0000005e;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+header img {
+    max-width: 20%;
+    border-radius: 50%;
+    border: 15px double #ffffff;
+}
+.header_info{
+    max-width: 600px;
+    color: #fff;
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 15px; /*generar un espaciado entre los elementos hijos del contenedor*/
+}
+/* Barra Menu */
+.nav_menu{
+    background-color: #1b1b1b;
+    height: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.nav_ul{
+    display: flex;
+    gap: 15px;
+    flex-direction: row;
+    justify-content: center;
+}
+.nav_ul>li{
+    list-style: none;
+}
+.nav_ul > li > a{
+    text-decoration: none;
+    color: #ffffff;
+    transition: color 0.3s;
+    transition: font-size 0.3s;
+}
+.nav_ul > li > a:hover{
+    text-decoration: none;
+    font-size: 18px;
+    color: #ff8800;
+}
+/* MAIN - Seccion 1 */
+main{
+    background: linear-gradient(#f7b87e, #ff891b);
+}
+.section1{
+    background-color: #ffae62;
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+    padding: 20px;
+}
+.card_contain{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+}
+.card{
+    background-color: #fff;
+    height: 250px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 10px;
+    overflow: hidden;
+    gap: 15px;
+    box-shadow: 1px 1px 6px 0.1px #646464;
+}
+.card img{
+    width: 200px;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.card_content{
+    padding: 10px;
+}
+
+.card_content a{
+    display: inline-block;
+    margin: 15px;
+    padding: 10px;
+    background-color: #ff8800;
+    color: #fff;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.4s;
+}
+
+.card_content a:hover{
+    background-color: #bb6400;
+}
+@media(max-width: 700px){
+    .card{
+        background-color: #fff;
+        display: flex;
+        flex-direction: column;
+        min-height: 330px;
+    }
+    .card img{
+        width: 100%;
+        height: 150px;
+    }    
+    .card_content{
+        overflow: auto;
+    }
+}
+ /* Main - Seccion 2*/
+.section2{
+    background-color: #ffae62;
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+    padding: 20px;
+}
+.card_contain2{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center; /* Modificado */
+    flex-wrap: wrap; /* Modificado */
+    gap:10px;
+}
+.card2{
+    width: 250px; /* Modificado */
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    overflow: hidden;
+    gap: 15px;
+    box-shadow: 1px 1px 6px 0.1px #646464;
+}
+.card2 img{
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* Seccion 3*/
+.section3{
+    background-color: #ffae62;
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.form_c{
+    width: 70%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+input{
+    height: 30px;
+    padding: 10px;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #000;
+}
+input[type="button"]{
+    width: 30%;
+    border: none;
+    border-radius: 5px;
+    background-color: #bb6400;
+    color: #fff;
+    font-weight: 600;
+}
